@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<index schemaVersion="1.1.0" xs:noNamespaceSchemaLocation="PackIndex.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema-instance">
+<vendor>nuvoton</vendor>
+<url>https://github.com/nuvoton-CF00/Nuvoton_CMSIS_Pack/raw/master/</url>
+<pindex>
+<pdsc url="https://github.com/nuvoton-CF00/Nuvoton_CMSIS_Pack/raw/master/Nuvoton_DFP/" vendor="Nuvoton" name="NPCX_DFP" version="1.0.0" />
+</pindex>
+</index>
