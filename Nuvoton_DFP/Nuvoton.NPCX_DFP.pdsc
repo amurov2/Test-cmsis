@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package schemaVersion="1.2" xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:noNamespaceSchemaLocation="PACK.xsd">
+  <vendor>Nuvoton</vendor>
+  <url>https://github.com/nuvoton-CF00/Nuvoton_CMSIS_Pack/raw/master/Nuvoton_DFP/</url>
+  <name>NPCX_DFP</name>
+  <description>Nuvoton ARM Cortex-M4 NPCX Family Device Support</description>
+
+  <releases>
+    <release version="1.0.0" date="2025-02-15">
+      Initial Version.
+    </release>
+  </releases>
+
+  <keywords>
+    <!-- keywords for indexing -->
+    <keyword>Nuvoton</keyword>
+    <keyword>Device Support</keyword>
+    <keyword>Device Family Package Nuvoton</keyword>
+    <keyword>NPCX</keyword>
+  </keywords>
+
+  <devices>
+    <!-- generated, do not modify this section! -->
+    <family Dfamily="NPCX Family" Dvendor="Nuvoton:18">
+      <!-- *************************  Subfamily 'CM2003'  ***************************** -->
+      <subFamily DsubFamily="EC24">
+        <processor  Dcore="Cortex-M4"  Dclock="32768000"/>
+        <compile    header=""/>
+        <description>The NPCX4mnx series is a 32-bit microcontroller with embedded ARM Cortex-M4 core.</description>
+        <!-- *************************  Device 'NPCX498F'  ***************************** -->
+        <device Dname="NPCX489F">
+          <debug      svd   ="SVD/NPCX498F.svd"/>
+          <memory		name="IROM1"     start="0x0"  size="0x30000"/>
+          <memory		name="IRAM1"     start="0x10060000"  size="0x60000"     startup="1"/>
+          <memory		name="IRAM2"     start="0x100C0000"  size="0x1C800"/>
+          <memory		name="IRAM3"     start="0x20060000"  size="0x60000"/>
+          <memory		name="IRAM4"     start="0x200C0000"  size="0x1C800"/>
+          <algorithm  name  ="Flash/npcx498f_internal.FLM"        start="0x60000000"  size="0x100000" default="0"/>
+          <algorithm  name  ="Flash/npcx498f_external.FLM"        start="0x68000000"  size="0x8000000" default="0"/>
+          <feature type="IOs"       n="32"/>
+          <feature type="Timer"         n="6"   m="32"/>
+          <feature type="UART"          n="4"/>
+          <feature type="I2C"       n="8"/>
+          <feature type="PWM"       n="8"   m="16"/>
+          <feature type="ADC"       n="2"   m="10"/>
+        </device>
+
+        <!-- *************************  Device 'NPCX497X'  ***************************** -->
+        <device Dname="NPCX497X">
+          <debug      svd   ="SVD/NPCX497X.svd"/><memory></memory>
+          <memory		name="IROM1"     start="0x0"  size="0x30000"/>
+          <memory		name="IRAM1"     start="0x10078000"  size="0x48000"     startup="1"/>
+          <memory		name="IRAM2"     start="0x100C8000"  size="0x18000"/>
+          <memory		name="IRAM1"     start="0x20078000"  size="0x48000"/>
+          <memory		name="IRAM2"     start="0x200C8000"  size="0x18000"/>
+          <algorithm  name  ="Flash/npcx497x_internal.FLM"        start="0x60000000"  size="0x80000" default="0"/>
+          <algorithm  name  ="Flash/npcx497x_external.FLM"        start="0x68000000"  size="0x8000000" default="0"/>
+          <feature type="IOs"       n="32"/>
+          <feature type="Timer"         n="6"   m="32"/>
+          <feature type="UART"          n="4"/>
+          <feature type="I2C"       n="8"/>
+          <feature type="PWM"       n="8"   m="16"/>
+          <feature type="ADC"       n="2"   m="10"/>
+        </device>
+      </subFamily>
+    </family>
+  </devices>
+
+  <conditions>
+    <!-- conditions are dependecy rules that can apply to a component or an individual file -->
+    <condition id="GNU ARM Compiler">
+      <!-- conditions selecting GNU ARM Compiler-->
+      <accept Tcompiler="GCC"/>
+    </condition>
+  </conditions>
+</package>
