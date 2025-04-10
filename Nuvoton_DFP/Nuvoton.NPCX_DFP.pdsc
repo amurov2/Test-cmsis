@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package schemaVersion="1.4" xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:noNamespaceSchemaLocation="PACK.xsd">
   <vendor>Nuvoton</vendor>
-  <url>https://github.com/nuvoton-CF00/Nuvoton_CMSIS_Pack/raw/main/Nuvoton_DFP/</url>
+  <url>https://github.com/amurov2/Test-cmsis/raw/main/Nuvoton_DFP/</url>
   <name>NPCX_DFP</name>
   <description>Nuvoton ARM Cortex-M4 NPCX Family Device Support</description>
 
